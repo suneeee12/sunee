@@ -1,0 +1,28 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "execution pipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [
+					{
+						"name": "email",
+						"value": "hh@gmail.com"
+					}
+				],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pipelineforDataCSV",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-12-15T06:35:34Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
